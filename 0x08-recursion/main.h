@@ -13,5 +13,7 @@ int is_palindrome(char *s);
 int _putchar(char c);
 int _sqrt(int n, int m);
 int actual_prime(int n, int m);
+int check_pal(char *s, int m, int len);
+int _strlen_recursion(char *s);
 
 #endif
