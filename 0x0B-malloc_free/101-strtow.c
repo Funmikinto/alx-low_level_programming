@@ -12,18 +12,17 @@ int count_word(char *s)
 	int flag, m, n;
 
 	flag = 0;
-
 	n = 0;
 
 	for (m = 0 ; s[m] != '\0' ; m++)
 	{
 		if (s[m] == ' ')
 			flag = 0;
-	}
-	if (flag == 0)
-	{
-		flag = 1;
-		n++;
+		else if (flag == 0)
+		{
+			flag = 1;
+			n++;
+		}
 	}
 	return (n);
 }
